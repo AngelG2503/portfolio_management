@@ -1,0 +1,85 @@
+.clients-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* 🔥 Hover-based horizontal scroll */
+.clients-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+
+    padding: 1rem 2rem;
+
+    overflow-x: hidden;
+    /* ❌ no scrollbar */
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+}
+
+/* Cursor feedback */
+.hover-scroll {
+    cursor: pointer;
+}
+
+/* Client card width lock */
+.client-card {
+    flex: 0 0 300px;
+    width: 300px;
+    max-width: 300px;
+
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.client-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 5px solid #3498db;
+}
+
+/* Text */
+.client-description {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.client-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.client-designation {
+    color: #3498db;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .clients-grid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

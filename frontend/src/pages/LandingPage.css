@@ -1,0 +1,198 @@
+.landing-page {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Generic centered content (NOT for hero / projects scroll) */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section headings only (safe) */
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* ================= PROJECTS SECTION ================= */
+/* ❌ REMOVED grid layout from here */
+/* Projects layout is controlled ONLY by Projects.css */
+
+.projects-section {
+    background-color: white;
+}
+
+/* ================= CLIENTS SECTION ================= */
+
+.clients-section {
+    background-color: #f8f9fa;
+}
+
+
+.client-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.client-card:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.client-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 5px solid #3498db;
+}
+
+.client-description {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.client-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.client-designation {
+    color: #3498db;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-section input {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.contact-section input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.contact-section button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.contact-section button:hover {
+    background-color: #229954;
+    transform: scale(1.02);
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 3rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    width: 100%;
+}
+
+.newsletter-section h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.newsletter-section input {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.newsletter-section button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.newsletter-section button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
